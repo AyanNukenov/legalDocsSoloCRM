@@ -1,23 +1,85 @@
-<!DOCTYPE html>  
-<html lang="ru">  
-<head>  
-    <meta charset="UTF-8">  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>SoloCRM - Документы</title>  
-    <link rel="stylesheet" href="styles.css">  
-</head>  
-<body>  
-    <div class="container">  
-        <header>  
-            <h1>SoloCRM</h1>  
-            <p>Юридические документы и служба поддержки</p>  
-        </header>  
-        <nav>  
-            <a href="privacy-policy.html" class="btn">Политика конфиденциальности</a>  
-            <a href="user-agrement.html" class="btn">Пользовательское соглашение</a>  
-            <h3>Служба поддержки:</h3>
-            <p>Обратиться на почту: aann04185@gmail.com</p>  
-        </nav>  
-    </div>  
-</body>  
-</html> 
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SoloCRM — Юридические документы и служба поддержки</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <div class="brand">
+        <div class="logo-circle">S</div>
+        <div>
+          <h1 class="app-name">SoloCRM</h1>
+          <p class="app-subtitle">Юридическая информация и служба поддержки</p>
+          <p class="app-subtitle-en">Legal Information & Support Service</p>
+        </div>
+      </div>
+    </header>
+
+    <main class="content">
+      <section class="card">
+        <h2>Документы</h2>
+        <p class="section-description">
+          На этой странице размещены официальные юридические документы,
+          регулирующие использование приложения SoloCRM.
+        </p>
+
+        <div class="links-grid">
+          <a href="privacy-policy.html" class="btn primary">
+            Политика конфиденциальности
+            <span class="btn-subtitle">Privacy Policy</span>
+          </a>
+
+          <a href="user-agrement.html" class="btn secondary">
+            Пользовательское соглашение
+            <span class="btn-subtitle">Terms of Use (EULA)</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Служба поддержки</h2>
+        <p class="section-description">
+          Если у вас есть вопросы по работе приложения, обработке данных
+          или условиям использования, вы можете связаться с нашей службой поддержки.
+        </p>
+
+        <div class="support-block">
+          <div class="support-item">
+            <div class="support-label">Электронная почта</div>
+            <a class="support-value" href="mailto:aann04185@gmail.com">
+              aann04185@gmail.com
+            </a>
+          </div>
+        </div>
+
+        <p class="support-note">
+          В обращении, пожалуйста, укажите:
+          <br>
+          — полное название приложения: <strong>SoloCRM</strong><br>
+          — платформу: <strong>iOS</strong><br>
+          — версию приложения (если возможно).
+        </p>
+      </section>
+
+      <footer class="footer">
+        <p class="footer-text">
+          © <span id="year"></span> SoloCRM. Все права защищены.
+        </p>
+        <p class="footer-text-en">
+          © <span id="year-en"></span> SoloCRM. All rights reserved.
+        </p>
+      </footer>
+    </main>
+  </div>
+
+  <script>
+    const year = new Date().getFullYear();
+    document.getElementById('year').textContent = year;
+    document.getElementById('year-en').textContent = year;
+  </script>
+</body>
+</html>
