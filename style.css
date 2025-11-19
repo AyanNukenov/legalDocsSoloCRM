@@ -15,13 +15,15 @@ body {
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
     "Helvetica Neue", sans-serif;
   line-height: 1.6;
-  color: #1f2933;
+  color: #3e2e31; /* основной текст в палитре */
   background: #f3f4f6;
 }
 
 /* Фон только для главной страницы */
 body.legal-home {
-  background: radial-gradient(circle at top left, #e0f2fe, #f3f4f6);
+  background:
+    radial-gradient(circle at top left, rgba(221, 160, 38, 0.18), transparent 55%),
+    linear-gradient(to right, rgb(60, 59, 63), rgb(96, 92, 60));
 }
 
 /* Общий контейнер страницы */
@@ -33,10 +35,10 @@ body.legal-home {
 
 /* Шапка */
 .site-header {
-  background: linear-gradient(90deg, #0b72e7, #2563eb);
+  background: linear-gradient(90deg, #2c1608, #3e2e31);
   color: #ffffff;
   padding: 20px 16px;
-  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.2);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
 }
 
 .brand {
@@ -51,13 +53,15 @@ body.legal-home {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.14);
+  background: rgba(221, 160, 38, 0.12);
+  border: 1px solid rgba(221, 160, 38, 0.6);
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 700;
   font-size: 20px;
-  box-shadow: 0 4px 10px rgba(15, 23, 42, 0.35);
+  color: #dda026;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.45);
 }
 
 .app-name {
@@ -88,18 +92,18 @@ body.legal-home {
 
 /* Карточки */
 .card {
-  background: #ffffff;
-  border-radius: 16px;
+  background: #fdfdfb;
+  border-radius: 18px;
   padding: 24px 22px;
   margin-bottom: 20px;
-  box-shadow: 0 14px 28px rgba(15, 23, 42, 0.08);
-  border: 1px solid #e5e7eb;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.18);
+  border: 1px solid rgba(62, 46, 49, 0.16);
 }
 
 /* Hero-карточка чуть выделена */
 .card--hero {
-  border: 1px solid #dbeafe;
-  box-shadow: 0 18px 40px rgba(37, 99, 235, 0.12);
+  border-color: rgba(221, 160, 38, 0.4);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.22);
 }
 
 /* Support-карточка поспокойнее */
@@ -110,13 +114,13 @@ body.legal-home {
 .card h2 {
   margin: 0 0 10px;
   font-size: 21px;
-  color: #111827;
+  color: #2c1608;
 }
 
 .section-description {
   margin: 0 0 20px;
   font-size: 14px;
-  color: #4b5563;
+  color: #4b4a4f;
 }
 
 /* Кнопки документов */
@@ -148,32 +152,35 @@ body.legal-home {
     background-color 0.2s ease,
     box-shadow 0.2s ease,
     transform 0.1s ease,
-    border-color 0.2s ease;
+    border-color 0.2s ease,
+    color 0.2s ease;
   border: 1px solid transparent;
 }
 
+/* Основная кнопка — золотой акцент */
 .btn.primary {
-  background-color: #0b72e7;
-  color: #ffffff;
-  box-shadow: 0 6px 14px rgba(37, 99, 235, 0.28);
+  background-color: #dda026;
+  color: #2c1608;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.28);
 }
 
 .btn.primary:hover {
-  background-color: #0859b5;
+  background-color: #f0b63a;
   transform: translateY(-1px);
-  box-shadow: 0 10px 22px rgba(37, 99, 235, 0.38);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.38);
 }
 
+/* Вторичная кнопка — светлый фон, тёмная рамка */
 .btn.secondary {
-  background-color: #ffffff;
-  color: #0b72e7;
-  border-color: #d1e3ff;
+  background-color: #fdfbf5;
+  color: #3e2e31;
+  border-color: rgba(221, 160, 38, 0.55);
 }
 
 .btn.secondary:hover {
-  background-color: #f3f6ff;
+  background-color: #f6f0e0;
   transform: translateY(-1px);
-  box-shadow: 0 8px 16px rgba(15, 23, 42, 0.09);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.18);
 }
 
 .btn-subtitle {
@@ -204,7 +211,7 @@ body.legal-home {
 
 .support-value {
   font-size: 15px;
-  color: #0b72e7;
+  color: #dda026;
   text-decoration: none;
   font-weight: 500;
   word-break: break-all;
@@ -216,7 +223,7 @@ body.legal-home {
 
 .support-note {
   font-size: 13px;
-  color: #4b5563;
+  color: #4b4a4f;
   margin: 0;
 }
 
@@ -225,7 +232,7 @@ body.legal-home {
   margin-top: 24px;
   text-align: center;
   font-size: 12px;
-  color: #6b7280;
+  color: #e5e7eb;
 }
 
 .footer-text,
@@ -237,7 +244,7 @@ body.legal-home {
   margin-top: 2px;
 }
 
-/* Документ-страницы (privacy / terms) – оставляем, если уже есть у тебя подобные */
+/* Документ-страницы (privacy / terms) */
 .document {
   text-align: left;
   line-height: 1.6;
@@ -246,6 +253,6 @@ body.legal-home {
   border-radius: 12px;
   max-width: 900px;
   margin: 24px auto;
-  box-shadow: 0 8px 16px rgba(15, 23, 42, 0.06);
-  border: 1px solid #e5e7eb;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16);
+  border: 1px solid rgba(62, 46, 49, 0.2);
 }
