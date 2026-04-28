@@ -1,85 +1,160 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="kk">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SoloCRM — Юридические документы и служба поддержки</title>
+  <title>SoloCRM — Заңды құжаттар / Юридические документы / Legal Documents</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="legal-home">
   <div class="page">
     <header class="site-header">
-      <div class="brand">
-        <div class="logo-circle">S</div>
-        <div>
-          <h1 class="app-name">SoloCRM</h1>
-          <p class="app-subtitle">Юридическая информация и служба поддержки</p>
-          <p class="app-subtitle-en">Legal Information & Support Service</p>
+      <div class="site-header-inner">
+        <div class="brand">
+          <div class="logo-circle">S</div>
+          <div>
+            <h1 class="app-name">SoloCRM</h1>
+          </div>
         </div>
+        <div class="lang-switcher"></div>
       </div>
     </header>
 
     <main class="content content--centered">
-      <section class="card card--hero">
-        <h2>Юридические документы SoloCRM</h2>
-        <p class="section-description">
-          Здесь вы можете ознакомиться с официальными юридическими документами,
-          регулирующими использование приложения <strong>SoloCRM</strong>, а также
-          найти контактные данные службы поддержки.
-        </p>
 
-        <div class="links-grid">
-          <a href="privacy-policy.html" class="btn primary">
-            Политика конфиденциальности
-            <span class="btn-subtitle">Privacy Policy</span>
-          </a>
-
-          <a href="user-agrement.html" class="btn secondary">
-            Пользовательское соглашение
-            <span class="btn-subtitle">Terms of Use (EULA)</span>
-          </a>
-        </div>
-      </section>
-
-      <section class="card card--support">
-        <h2>Служба поддержки</h2>
-        <p class="section-description">
-          Если у вас есть вопросы по работе приложения, обработке данных
-          или условиям использования, вы можете связаться с нашей службой поддержки.
-        </p>
-
-        <div class="support-block">
-          <div class="support-item">
-            <div class="support-label">Электронная почта</div>
-            <a class="support-value" href="mailto:aann04185@gmail.com">
-              aann04185@gmail.com
+      <!-- КАЗАХСКИЙ -->
+      <div class="lang-block" data-lang="kk">
+        <section class="card card--hero">
+          <h2>SoloCRM заңды құжаттары</h2>
+          <p class="section-description">
+            Мұнда <strong>SoloCRM</strong> қосымшасын пайдалануды реттейтін ресми заңды
+            құжаттармен танысуға болады, сондай-ақ қолдау қызметінің байланыс деректерін таба аласыз.
+          </p>
+          <div class="links-grid">
+            <a href="privacy-policy.html" class="btn primary">
+              Құпиялылық саясаты
+              <span class="btn-subtitle">Privacy Policy</span>
+            </a>
+            <a href="user-agrement.html" class="btn secondary">
+              Пайдаланушы келісімі
+              <span class="btn-subtitle">Terms of Use (EULA)</span>
             </a>
           </div>
-        </div>
+        </section>
+        <section class="card card--support">
+          <h2>Қолдау қызметі</h2>
+          <p class="section-description">
+            Қосымшаның жұмысы, деректерді өңдеу немесе пайдалану шарттары бойынша
+            сұрақтарыңыз болса, қолдау қызметіне хабарласа аласыз.
+          </p>
+          <div class="support-block">
+            <div class="support-item">
+              <div class="support-label">Электрондық пошта</div>
+              <a class="support-value" href="mailto:aann04185@gmail.com">aann04185@gmail.com</a>
+            </div>
+          </div>
+          <p class="support-note">
+            Өтінішіңізде көрсетіңіз:<br>
+            — қосымшаның толық атауы: <strong>SoloCRM</strong><br>
+            — платформа: <strong>iOS</strong>/<strong>Android</strong><br>
+            — қосымшаның нұсқасы (болса).
+          </p>
+        </section>
+        <footer class="footer">
+          <p class="footer-text">© <span class="js-year"></span> ANTech. Барлық құқықтар қорғалған.</p>
+        </footer>
+      </div>
 
-        <p class="support-note">
-          В обращении, пожалуйста, укажите:<br>
-          — полное название приложения: <strong>SoloCRM</strong><br>
-          — платформу: <strong>iOS</strong>/<strong>Android</strong><br>
-          — версию приложения (при наличии).
-        </p>
-      </section>
+      <!-- РУССКИЙ -->
+      <div class="lang-block" data-lang="ru">
+        <section class="card card--hero">
+          <h2>Юридические документы SoloCRM</h2>
+          <p class="section-description">
+            Здесь вы можете ознакомиться с официальными юридическими документами,
+            регулирующими использование приложения <strong>SoloCRM</strong>, а также
+            найти контактные данные службы поддержки.
+          </p>
+          <div class="links-grid">
+            <a href="privacy-policy.html" class="btn primary">
+              Политика конфиденциальности
+              <span class="btn-subtitle">Privacy Policy</span>
+            </a>
+            <a href="user-agrement.html" class="btn secondary">
+              Пользовательское соглашение
+              <span class="btn-subtitle">Terms of Use (EULA)</span>
+            </a>
+          </div>
+        </section>
+        <section class="card card--support">
+          <h2>Служба поддержки</h2>
+          <p class="section-description">
+            Если у вас есть вопросы по работе приложения, обработке данных
+            или условиям использования, вы можете связаться с нашей службой поддержки.
+          </p>
+          <div class="support-block">
+            <div class="support-item">
+              <div class="support-label">Электронная почта</div>
+              <a class="support-value" href="mailto:aann04185@gmail.com">aann04185@gmail.com</a>
+            </div>
+          </div>
+          <p class="support-note">
+            В обращении, пожалуйста, укажите:<br>
+            — полное название приложения: <strong>SoloCRM</strong><br>
+            — платформу: <strong>iOS</strong>/<strong>Android</strong><br>
+            — версию приложения (при наличии).
+          </p>
+        </section>
+        <footer class="footer">
+          <p class="footer-text">© <span class="js-year"></span> ANTech. Все права защищены.</p>
+        </footer>
+      </div>
 
-      <footer class="footer">
-        <p class="footer-text">
-          © <span id="year"></span> ANTech. Все права защищены.
-        </p>
-        <p class="footer-text-en">
-          © <span id="year-en"></span> ANTech. All rights reserved.
-        </p>
-      </footer>
+      <!-- ENGLISH -->
+      <div class="lang-block" data-lang="en">
+        <section class="card card--hero">
+          <h2>SoloCRM Legal Documents</h2>
+          <p class="section-description">
+            Here you can review the official legal documents governing the use of the
+            <strong>SoloCRM</strong> application, as well as find the contact details of our support service.
+          </p>
+          <div class="links-grid">
+            <a href="privacy-policy.html" class="btn primary">
+              Privacy Policy
+              <span class="btn-subtitle">Құпиялылық саясаты</span>
+            </a>
+            <a href="user-agrement.html" class="btn secondary">
+              Terms of Use (EULA)
+              <span class="btn-subtitle">Пайдаланушы келісімі</span>
+            </a>
+          </div>
+        </section>
+        <section class="card card--support">
+          <h2>Support Service</h2>
+          <p class="section-description">
+            If you have any questions about the app's functionality, data processing,
+            or terms of use, please contact our support service.
+          </p>
+          <div class="support-block">
+            <div class="support-item">
+              <div class="support-label">Email</div>
+              <a class="support-value" href="mailto:aann04185@gmail.com">aann04185@gmail.com</a>
+            </div>
+          </div>
+          <p class="support-note">
+            Please include in your message:<br>
+            — full app name: <strong>SoloCRM</strong><br>
+            — platform: <strong>iOS</strong>/<strong>Android</strong><br>
+            — app version (if available).
+          </p>
+        </section>
+        <footer class="footer">
+          <p class="footer-text">© <span class="js-year"></span> ANTech. All rights reserved.</p>
+        </footer>
+      </div>
+
     </main>
   </div>
 
-  <script>
-    const year = new Date().getFullYear();
-    document.getElementById('year').textContent = year;
-    document.getElementById('year-en').textContent = year;
-  </script>
+  <script src="js/i18n.js"></script>
 </body>
 </html>
